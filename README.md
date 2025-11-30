@@ -52,9 +52,9 @@ Load a CSV/TSV/text file, preview it in a sortable table, choose which columns t
 
 ---
 
-## **📸 Screenshots**
+## **Demo GIF**
 
-> *TODO: Add screenshots of the main window and column selector here.*
+![CSV Converter Demo](assets/csv_converter_demo_gif)
 
 ---
 
@@ -187,3 +187,4 @@ The tool provides meaningful feedback for:
 ## **📄 License**
 
 > *TODO: Add your preferred license (MIT recommended).*
+
