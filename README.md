@@ -68,22 +68,11 @@ Load a CSV/TSV/text file, preview it in a sortable table, choose which columns t
 
 ## **🚀 Getting Started**
 
-### **Clone & Build**
+### ***Download latest release***
 
-```bash
-git clone https://github.com/YOUR_USERNAME/csv-converter-tool.git
-cd csv-converter-tool
-```
-
-Open the solution in **Visual Studio**, build in **Release** mode.
-
-### **Run the App**
-
-Launch the compiled `.exe` from:
-
-```
-/bin/Release/net6.0-windows/
-```
+- Navigate to the releases section
+- Download the latest release's .ZIP folder
+- Extract and run the .exe file
 
 ---
 
@@ -175,17 +164,9 @@ The tool provides meaningful feedback for:
 
 ---
 
-## **🔮 Future Improvements (Optional)**
-
-* Input encoding dropdown (UTF-8 vs Shift-JIS vs auto-detect)
-* Preview row limit for very large files
-* Excel export (.xlsx)
-* Enhanced auto-detection for more exotic delimiters
-
----
-
 ## **📄 License**
 
-> *TODO: Add your preferred license (MIT recommended).*
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 
 
