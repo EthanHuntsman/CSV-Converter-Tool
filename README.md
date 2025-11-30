@@ -54,7 +54,7 @@ Load a CSV/TSV/text file, preview it in a sortable table, choose which columns t
 
 ## **Demo GIF**
 
-![CSV Converter Demo](assets/csv_converter_demo_gif)
+![CSV Converter Demo](assets/csv_converter_demo_gif.gif)
 
 ---
 
@@ -187,4 +187,5 @@ The tool provides meaningful feedback for:
 ## **📄 License**
 
 > *TODO: Add your preferred license (MIT recommended).*
+
 
