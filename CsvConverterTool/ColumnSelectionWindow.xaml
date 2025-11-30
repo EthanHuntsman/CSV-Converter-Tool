@@ -1,0 +1,64 @@
+﻿<Window x:Class="CsvConverterTool.ColumnSelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Select Columns"
+        Height="400" Width="350"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- title & description -->
+            <RowDefinition Height="*"/>
+            <!-- scrollable list -->
+            <RowDefinition Height="Auto"/>
+            <!-- buttons -->
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="Select Columns"
+                       FontSize="18"
+                       FontWeight="Bold"/>
+            <TextBlock Text="Choose which columns to include in the output."
+                       Margin="0,4,0,0"
+                       Foreground="Gray"
+                       TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <!-- Scrollable column list -->
+        <Border Grid.Row="1" BorderBrush="#DDD" BorderThickness="1" CornerRadius="4">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="4">
+                <StackPanel Name="stackColumns" />
+            </ScrollViewer>
+        </Border>
+
+        <!-- Bottom buttons -->
+        <DockPanel Grid.Row="2" Margin="0,10,0,0">
+            <!-- Left side: select all / none -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                <Button Name="btnSelectAll"
+                        Content="Select All"
+                        Margin="0,0,5,0"
+                        Click="btnSelectAll_Click"/>
+                <Button Name="btnDeselectAll"
+                        Content="Deselect All"
+                        Click="btnDeselectAll_Click"/>
+            </StackPanel>
+
+            <!-- Right side: OK / Cancel -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                <Button Name="btnOk"
+                        Content="OK"
+                        Width="75"
+                        Margin="0,0,5,0"
+                        IsDefault="True"
+                        Click="btnOk_Click"/>
+                <Button Name="btnCancel"
+                        Content="Cancel"
+                        Width="75"
+                        IsCancel="True"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
